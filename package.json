@@ -1,0 +1,20 @@
+{
+  "name": "shared_sessionStorage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momoko8443/shared_sessionStorage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/momoko8443/shared_sessionStorage/issues"
+  },
+  "homepage": "https://github.com/momoko8443/shared_sessionStorage#readme"
+}
