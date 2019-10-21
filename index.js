@@ -4,9 +4,10 @@ class SharedSessionStorage{
             throw new Error('this library just support browser platform');
         }
         this.interval = 5000;
-        window.addEventListener('DOMContentLoaded', (event) => {
-            this._init();
-        });
+        // window.addEventListener('DOMContentLoaded', (event) => {
+        //     this._init();
+        // });
+        this._init();
     }
     // config(cfg){
 
@@ -37,7 +38,7 @@ class SharedSessionStorage{
             this._clearExpiredData();
             this._updateTimestamp(tabName);
         }
-        document.getElementById('tabName').innerText = tabName;
+       
         window.setInterval(()=>{
             this._updateTimestamp(tabName);
         },this.interval);
@@ -58,7 +59,7 @@ class SharedSessionStorage{
                 delete pool[key];
             }
         }
-        if(Object.keys(pool).length === 0){
+        if(!pool || Object.keys(pool).length === 0){
             window.localStorage.clear();
             window.localStorage.setItem('sharedTabPool','{}');
         }
@@ -80,3 +81,4 @@ class SharedSessionStorage{
 //     var value = document.getElementById('message').value;
 //     window.localStorage.setItem('sharedData',value);
 // }
+export default SharedSessionStorage;

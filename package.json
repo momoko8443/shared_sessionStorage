@@ -1,6 +1,6 @@
 {
   "name": "@momoko8443/shared-sessionstorage",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
