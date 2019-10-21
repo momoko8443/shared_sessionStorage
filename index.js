@@ -7,7 +7,6 @@ class SharedSessionStorage{
         window.addEventListener('DOMContentLoaded', (event) => {
             this._init();
         });
-
     }
     // config(cfg){
 
@@ -66,14 +65,6 @@ class SharedSessionStorage{
     }
 
 }
-
-window.addEventListener('DOMContentLoaded', (event) => {
-    init();
-    renderData();
-});
-window.addEventListener('storage', (result)=>{
-    renderData();
-});
 // document.getElementById('storeBtn').addEventListener('click',(e)=>{
 //     updateLocalStorage();
 //     renderData();
