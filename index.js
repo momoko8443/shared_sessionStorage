@@ -25,6 +25,10 @@ class SharedSessionStorage{
             callback && callback(result);
         });
     }
+    clear(){
+        window.sessionStorage.clear();
+        window.localStorage.clear();
+    }
     _init(){
         var tabName = window.sessionStorage.getItem('tabName');
         if(!tabName){
